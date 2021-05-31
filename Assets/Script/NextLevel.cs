@@ -25,6 +25,8 @@ public class NextLevel : MonoBehaviour {
             Debug.Log("Fehler in der Levelbennung!\n" + e);
         }
 
+        Debug.Log("Level" + (currentSceneNumber + 1));
+
         if(SceneManager.GetSceneByName("Level" + (currentSceneNumber + 1)).IsValid())
         {
             Debug.Log(currentSceneNumber);
