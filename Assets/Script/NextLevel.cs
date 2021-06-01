@@ -12,6 +12,20 @@ public class NextLevel : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        List<string> scenesInBuild = new List<string>();
+        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+        {
+            string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
+            int lastSlash = scenePath.LastIndexOf("/");
+            scenesInBuild.Add(scenePath.Substring(lastSlash + 1, scenePath.LastIndexOf(".") - lastSlash - 1));
+        }
+
+
+        foreach (String s in scenesInBuild)
+        {
+            Debug.Log(s);
+        }
+
         string currentSceneName = SceneManager.GetActiveScene().name;
         int currentSceneNumber;
 
@@ -19,21 +33,18 @@ public class NextLevel : MonoBehaviour {
         {
             currentSceneNumber = Int32.Parse(currentSceneName.Substring(5));
         }
-		catch (Exception e)
+        catch (Exception e)
         {
             currentSceneNumber = 1;
             Debug.Log("Fehler in der Levelbennung!\n" + e);
         }
 
-        Debug.Log("Level" + (currentSceneNumber + 1));
-
-        if(SceneManager.GetSceneByName("Level" + (currentSceneNumber + 1)).IsValid())
+        if (scenesInBuild.Contains("Level" + (currentSceneNumber + 1)))
         {
-            Debug.Log(currentSceneNumber);
             SceneManager.LoadScene("Level" + (currentSceneNumber + 1));
-            Debug.Log("Nächstes Level: " + (currentSceneNumber + 1));
         }
-        else{
+        else
+        {
             noFurtherLevel.enabled = true;
         }
     }
