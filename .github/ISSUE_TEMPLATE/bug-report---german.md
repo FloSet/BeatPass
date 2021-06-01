@@ -1,5 +1,5 @@
 ---
-name: Bug report - German
+name: Bug report
 about: Erstellen Sie einen Bericht, um uns zu helfen und dieses Spiel zu verbessern
 title: "[BUG] "
 labels: ''
@@ -24,8 +24,7 @@ Fügen Sie gegebenenfalls Screenshots hinzu, um Ihr Problem zu erklären.
 
 **Client (bitte füllen Sie die folgenden Informationen aus):**
   - Betriebssystem: [z.B. iOS]
-  - Browser [z.B. Chrom, Safari]
-  - Ausführung [z.B. 22]
+  - Version: [z.B. 22]
 
 **Zusätzlicher Kontext**
 Fügen Sie hier jeden weiteren Kontext zu dem Problem hinzu.
