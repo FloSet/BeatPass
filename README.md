@@ -1,18 +1,13 @@
 # Beat Pass
 
-Beat Pass is a game that was developed in school lessons.
+Beat Pass is a game that was developed in german school lessons. This is why some text here is in german. I'm sorry about that, but I have to.
 
 # Installation
 
-## To Play
+## Zum Spieln
 
-Download a release and open the .exe on Windows.
+Downloade ein Release für Windows, entpacke die .zip und starte die "Beat Pass.exe" Datei.
 
-## To Develop
+## Zum Entwicklen
 
-Install Visual Studio and Unity and clone the project.
-
-# Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Installiere Unity und klone dieses Repository.
