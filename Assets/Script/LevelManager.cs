@@ -3,19 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
 
     //aktueller Checkpoint
     public GameObject currentCheckpoint;
     //Spieler
-    public GameObject Player;
+    public Player player;
 
-
-	public void RespawnPlayer()
+    public void RespawnPlayer()
     {
         // Spieler zum Checkpoint
-        Player.transform.position = currentCheckpoint.transform.position;
+        player.gameObject.transform.position = currentCheckpoint.transform.position;
+        player.Death();
     }
 
     private void Update()
