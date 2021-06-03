@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour {
 
 
-    public LevelManager LevelManager;
+    private LevelManager LevelManager;
 	// Use this for initialization
 	void Start () {
         LevelManager = FindObjectOfType<LevelManager>();
