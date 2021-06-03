@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5025efb49df453245ba2fca24496e233
+guid: 8bdf89ece18eba04eaaeade723554c11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7300870410790622904
-    second: cartoon_lava_through_rocks_by_superiorgraphicss_d9r1k1f_0
+      213: 6035933842167239908
+    second: magma_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 519}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -94,22 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cartoon_lava_through_rocks_by_superiorgraphicss_d9r1k1f_0
+      name: magma_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 1278
-        height: 240
+        y: 0
+        width: 328
+        height: 1336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b6d55af4f6e15560800000000000000
-      internalID: 7300870410790622904
+      spriteID: 4e4132689d1f3c350800000000000000
+      internalID: 6035933842167239908
       vertices: []
       indices: 
       edges: []
