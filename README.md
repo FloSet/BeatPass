@@ -4,7 +4,7 @@ Beat Pass is a game that was developed in german school lessons. This is why som
 
 # Installation
 
-## Zum Spieln
+## Zum Spielen
 
 Downloade ein Release für Windows, entpacke die .zip und starte die "Beat Pass.exe" Datei.
 
