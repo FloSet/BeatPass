@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 212350273925314538}
   - component: {fileID: 61879888810413770}
   - component: {fileID: 50109322842571728}
+  - component: {fileID: 7470235238492460121}
   m_Layer: 0
   m_Name: crate
   m_TagString: Untagged
@@ -132,3 +133,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7470235238492460121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023391373121050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e116898833940b14cbec7e0f28b772ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3

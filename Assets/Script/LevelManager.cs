@@ -12,6 +12,11 @@ public class LevelManager : MonoBehaviour {
     //Spieler
     public Player player;
 
+    private void Start()
+    {
+        player = FindObjectOfType<Player>();
+    }
+
     public void RespawnPlayer()
     {
         // Spieler zum Checkpoint
