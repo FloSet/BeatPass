@@ -26,6 +26,8 @@ public class Player : MonoBehaviour {
             Debug.Log("Fire");
             GameObject nBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
 
+            gameObject.GetComponent<AudioSource>().Play();
+
             if(gameObject.GetComponent<Transform>().position.x < spawnPoint.position.x)
             {
                 nBullet.GetComponent<Rigidbody2D>().AddForce(Vector3.right * bulletSpeed);
