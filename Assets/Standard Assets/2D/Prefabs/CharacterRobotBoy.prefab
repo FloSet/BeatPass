@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 400002}
   - component: {fileID: 21200000}
   - component: {fileID: 9500000}
-  - component: {fileID: 5800000}
   - component: {fileID: 5000000}
   - component: {fileID: 11400002}
   - component: {fileID: 11400000}
@@ -143,22 +142,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &5800000
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.45}
-  serializedVersion: 2
-  m_Radius: 0.16
 --- !u!50 &5000000
 Rigidbody2D:
   serializedVersion: 4
@@ -224,7 +207,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.105668366}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -235,7 +218,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.68}
+  m_Size: {x: 0.25, y: 0.8913368}
   m_EdgeRadius: 0
 --- !u!114 &1170451056
 MonoBehaviour:
@@ -249,7 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c292382499933c4082ee8d801663d06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
   livesText: {fileID: 0}
   bullet: {fileID: 7413742064923112485, guid: de19a062aed544846be10e7f5fc36e64, type: 3}
   bulletSpeed: 900

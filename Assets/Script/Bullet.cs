@@ -8,9 +8,12 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Wenn das gameObject vorhanden und das Skript "Damageable" besitzt
         if (collision.gameObject != null && collision.gameObject.GetComponent<Damageable>() != null)
         {
+            //Schaden hinzufügen
             collision.SendMessage("applyDamage", damage, SendMessageOptions.DontRequireReceiver);
+            //und Kugel zerstören
             Destroy(gameObject);
         }
     }
