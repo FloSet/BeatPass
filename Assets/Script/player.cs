@@ -6,14 +6,38 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
-    int Score;
+    int score;
     int lives = 3;
     public Text scoreText;
     public Text livesText;
+    public GameObject bullet;
+    public float bulletSpeed = 1000;
+    public Transform spawnPoint;
 
     private void Start()
     {
-        Score = 0;
+        score = 0;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Debug.Log("Fire");
+            GameObject nBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
+
+            gameObject.GetComponent<AudioSource>().Play();
+
+            if(gameObject.GetComponent<Transform>().position.x < spawnPoint.position.x)
+            {
+                nBullet.GetComponent<Rigidbody2D>().AddForce(Vector3.right * bulletSpeed);
+            }
+            else
+            {
+                nBullet.GetComponent<Rigidbody2D>().AddForce(Vector3.left * bulletSpeed);
+            }
+            Destroy(nBullet, 2f);
+        }
     }
 
     public void Death()
@@ -32,13 +56,13 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Coin")
+        if (collision.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
             Debug.Log("Münze aufgesammelt");
-            Score++;
-            scoreText.text = "Score: " + Score.ToString();
-            Debug.Log("Score: " + Score);
+            score++;
+            scoreText.text = "Score: " + score.ToString();
+            Debug.Log("Score: " + score);
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class opponent : MonoBehaviour {
+public class Opponent : MonoBehaviour {
 
     public LevelManager LevelManager;
 
@@ -14,9 +14,8 @@ public class opponent : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             LevelManager.RespawnPlayer();
         }
     }

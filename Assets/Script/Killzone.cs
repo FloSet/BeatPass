@@ -11,16 +11,11 @@ public class Killzone : MonoBehaviour {
     {
         LevelManager = FindObjectOfType<LevelManager>();
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             LevelManager.RespawnPlayer();
-            Debug.Log("Spieler tot");
-        }
-        else
-        {
-            Debug.Log("Spieler lebt");
         }
     }
 }
