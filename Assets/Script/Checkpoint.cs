@@ -15,8 +15,8 @@ public class Checkpoint : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
+            //Checkpoint bei Begegnung aktuallisieren
             levelManager.currentCheckpoint = gameObject;
-            Debug.Log("Checkpoint erreicht");
         }
     }
 }

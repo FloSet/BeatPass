@@ -329,6 +329,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1985116085}
     m_Modifications:
+    - target: {fileID: -2141492099219575023, guid: dbff9f2ec6b4dca49b19af8591ee283c,
+        type: 3}
+      propertyPath: checkpoint
+      value: 
+      objectReference: {fileID: 1161995321}
     - target: {fileID: 1314156328493376, guid: dbff9f2ec6b4dca49b19af8591ee283c, type: 3}
       propertyPath: m_Name
       value: coin (3)
@@ -804,7 +809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4746806194891646, guid: 73b4a326fbbc3cd40ac83fc99c74598e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4746806194891646, guid: 73b4a326fbbc3cd40ac83fc99c74598e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -998,7 +1003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b581c75fdb2c37342be1f56b66290aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelManager: {fileID: 0}
 --- !u!1001 &882871480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1372,7 +1376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4746806194891646, guid: 73b4a326fbbc3cd40ac83fc99c74598e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4746806194891646, guid: 73b4a326fbbc3cd40ac83fc99c74598e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1660,7 +1664,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 0'
+  m_Text: "M\xFCnzen: 0"
 --- !u!222 &1327269940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2585,7 +2589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCheckpoint: {fileID: 1162809164}
-  player: {fileID: 0}
+  scoreText: {fileID: 1327269939}
 --- !u!4 &1760313959
 Transform:
   m_ObjectHideFlags: 0
@@ -2851,8 +2855,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1162809167}
-  - {fileID: 1161995321}
   - {fileID: 223362477}
+  - {fileID: 1161995321}
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
