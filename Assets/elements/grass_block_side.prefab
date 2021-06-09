@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3042131768773078288}
   - component: {fileID: 7633277534204805117}
   - component: {fileID: 5823274525863832353}
+  - component: {fileID: 447853810554101549}
   m_Layer: 0
   m_Name: grass_block_side
   m_TagString: Untagged
@@ -110,3 +111,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.12, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &447853810554101549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2441128691142404496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e116898833940b14cbec7e0f28b772ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
