@@ -6,18 +6,11 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
-    int score;
     int lives = 3;
-    public Text scoreText;
     public Text livesText;
     public GameObject bullet;
     public float bulletSpeed = 1000;
     public Transform spawnPoint;
-
-    private void Start()
-    {
-        score = 0;
-    }
 
     private void Update()
     {
@@ -58,11 +51,7 @@ public class Player : MonoBehaviour {
     {
         if (collision.CompareTag("Coin"))
         {
-            Destroy(collision.gameObject);
-            Debug.Log("Münze aufgesammelt");
-            score++;
-            scoreText.text = "Score: " + score.ToString();
-            Debug.Log("Score: " + score);
+            collision.gameObject.GetComponent<Coins>().Hide();
         }
     }
 }

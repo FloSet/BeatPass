@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Opponent : MonoBehaviour {
+public class opponent : MonoBehaviour {
 
     public LevelManager LevelManager;
 
