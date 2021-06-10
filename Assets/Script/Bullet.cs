@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject != null && collision.gameObject.GetComponent<Damageable>() != null)
         {
             //Schaden hinzufügen
-            collision.SendMessage("applyDamage", damage, SendMessageOptions.DontRequireReceiver);
+            collision.SendMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
             //und Kugel zerstören
             Destroy(gameObject);
         }
